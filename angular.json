@@ -3,13 +3,23 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
-    "analytics": false
+    "analytics": "4c846b24-478d-47e7-a0a3-d983d6eb46f6"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "projeto-integrador-lembre": {
+    "projeto-novo": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -55,10 +65,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "projeto-integrador-lembre:build:production"
+              "buildTarget": "projeto-novo:build:production"
             },
             "development": {
-              "buildTarget": "projeto-integrador-lembre:build:development"
+              "buildTarget": "projeto-novo:build:development"
             }
           },
           "defaultConfiguration": "development"
