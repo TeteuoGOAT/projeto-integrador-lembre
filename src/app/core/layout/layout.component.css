@@ -1,0 +1,5 @@
+.container { height: 100vh; }
+.menu { width: 240px; }
+.logo { padding: 24px 16px; font-size: 20px; font-weight: 700; }
+.conteudo { padding: 24px; background: #f6f4ff; }
+.ativo { background: #ede7ff; }

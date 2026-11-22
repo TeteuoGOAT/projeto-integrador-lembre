@@ -3,10 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { LayoutComponent } from './core/layout/layout.component';
+import { SharedModule } from './shared/shared-module';
 
 @NgModule({
   declarations: [App, LayoutComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, SharedModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
 })
